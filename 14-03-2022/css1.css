@@ -1,0 +1,56 @@
+table ,tr,td,th {
+    border: 1px solid black;
+}
+input{
+    margin-top: 10px;
+}
+
+#box{
+    box-shadow: 2px 4px 15px black;
+    width: 300px;
+    height: 150px;
+    padding-left: 50px;
+    padding-top: 50px;
+    margin-left: 35%;
+    margin-top: 10%;
+    border-radius: 15px;
+}
+#child > p{
+    background-color: aqua;
+}
+[id|=span1]{
+    color: grey;
+}
+#navbar{
+    background-color: blue;
+}
+#navbar li{
+    display: block;
+    height: 30px;
+    width: 10px;
+}
+#navbar li:hover{
+  background-color: brown;
+  color: white;
+  width: 80px;
+  padding-left: 10px;
+}
+#tablefortransform{
+    transform: translate(40px,50px);
+}
+#tablefortransform :hover{
+    transform: rotate(25deg);
+    transition : transform 2s;
+} 
+#forrotate{
+    
+    width: 60px;
+    height: 30px;
+   
+    background-color: aquamarine;
+    margin-top: 100px;
+}
+#forrotate :hover{
+    transform: rotate(36deg);
+    transition: transform 3s;
+}
