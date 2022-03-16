@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table,tr,th,td{
+            border :1px solid black;
+        }
+        td:nth-child(even){
+            background-color: blue;
+        }
+        td:nth-child(odd){
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col span="2" style="background-color: aqua;">
+        </colgroup>
+        <caption>Details</caption>
+        <thead>
+            <tr>
+                <th>first Name</th>
+                <th>Last Name</th>
+                <th>collage</th>    
+            </tr>
+        </thead>
+        <tbody>            
+            <tr>
+                <td>abhishek</td>
+                <td>jangra</td>
+                <td>gju</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>ankur</td>
+                <td>sharma</td>
+                <td>GJU</td>
+            </tr>
+        </tfoot>
+    </table>
+    <table>
+        <tr>
+            <th colspan="2">Name</th>
+            <th>age</th>
+        </tr>
+        <tr>
+            <td rowspan="2">ramesh</td>
+            <td>jake</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>suresh</td>
+            <td>24</td>
+        </tr>
+    </table>
+</body>
+</html>
