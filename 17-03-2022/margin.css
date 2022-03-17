@@ -1,0 +1,8 @@
+#margin{
+    margin-left: 40px;
+    border: 1px solid black;
+}
+#margin2{
+    margin: 2px 3px 4px 5px ;
+    border: 1px solid black;
+}

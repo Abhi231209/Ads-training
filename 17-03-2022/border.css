@@ -1,0 +1,11 @@
+#border{
+    border-radius: 1px;
+    border-width: 4px;
+    border-style: groove;
+}
+#border2{
+    border-left: 3px solid blue;
+    background-color: #def4f4;
+    height: 30px;
+    padding-top: 10px;
+}

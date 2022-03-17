@@ -1,0 +1,5 @@
+#backimage{
+    height: 700px;
+    background-image: url("workplace.jpg") ,url('girl.jpg');
+    background-blend-mode:screen;
+}
