@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        @keyframes backcolor{
+            from {background-color: aqua;}
+            to {background-color: blue;}
+        }
+        #ani:hover{
+            animation-name: backcolor;
+            animation-duration: 2s;
+            animation-iteration-count: 3;
+            animation-direction: alternate; 
+            animation-fill-mode: backwards;
+        }
+    </style>
+</head>
+<body>
+    <div id="ani">
+        this is for animation
+    </div>
+</body>
+</html>

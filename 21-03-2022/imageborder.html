@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image border</title>
+    <style>
+        #cont{
+            width: 500px;
+            height: 600px;
+        }
+        img {
+            /* border-radius: 50%; */
+            filter: blur(1px);
+        }
+
+        #overflow {
+            background-color: blue;
+            color: white;
+            display: inline-block;
+            visibility: hidden;
+            width: 500px;
+            height: 600px;
+            position: absolute;
+            left: 9px;
+            transition-property: visibility;
+            transition-delay: 0.2s;
+            transition-timing-function: ease-in;
+
+        }
+        #cont:hover #overflow{
+            visibility: visible;
+            /* transition: 1s ease; */
+        }
+        #text{
+            text-align: center;
+            font-size: 30px;
+            background-color: blue;
+            color: white;
+        } 
+        
+    </style>
+</head>
+
+<body>
+    <div id="cont" >
+        <img src="girl.jpg" alt="photo of girl">
+        <div id="overflow"><div id="text">Hello</div></div>
+    </div>
+</body>
+
+</html>

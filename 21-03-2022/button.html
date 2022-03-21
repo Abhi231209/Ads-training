@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .css {
+            background-color: aqua;
+            color: black;
+            width: 100px;
+            height: 20px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .css:active {
+            transform: scale(0.9);
+        }
+
+        #animation {
+            background-color: black;
+            color: white;
+            width: 130px;
+            height: 40px;
+            font-size: larger;
+            cursor: pointer;
+            transition: all 1s;
+        }
+        #hover{
+            transition: content 1s;
+        }
+        #hover::after{
+            content: '\00bb';
+            transition: 1s;
+            opacity: 0;
+            position: absolute;
+        }
+        #animation:hover{
+            padding-right: 10px;
+        }
+        #animation:hover #hover::after{
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <button>click me</button>
+    <button class="css">CSS button</button>
+    <button id="animation"><span id="hover">Hover </span></button>
+
+</body>
+
+</html>
