@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="date"></div><br>
+    <script>
+        document.getElementById("date").innerHTML=new Date();
+    </script>
+    <div id="date2"></div><br>
+    <script>
+        document.getElementById("date2").innerHTML=new Date(2022,3,23,1);
+    </script>
+    <div id="date3"></div><br>
+    <script>
+        document.getElementById("date3").innerHTML=new Date(99,3,23,1);
+    </script>
+    <div id="date4"> </div><br>
+    <script>
+        document.getElementById("date4").innerHTML=new Date("23 april 2022 12:00:00");
+    </script>
+    <div id="date5"> </div><br>
+    <script>
+        let d=new Date(2022,4,23)
+        document.getElementById("date5").innerHTML=d.toString();
+    </script>
+    <div id="date6"> </div><br>
+    <script>
+        let d1=new Date(2022,4,23)
+        document.getElementById("date6").innerHTML=d.toUTCString();
+    </script>
+    <div id="date7"> </div><br>
+    <script>
+        let d2=new Date(2022,4,23)
+        document.getElementById("date7").innerHTML=d.toDateString();
+    </script>
+
+
+</body>
+</html>

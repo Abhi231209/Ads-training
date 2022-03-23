@@ -11,6 +11,4 @@ function leave(){
 function key2(){
     document.getElementById('key').style.backgroundColor='grey';
 }
-function change(){
-    document.getElementById('form').style.backgroundColor='red';
-}
+f
