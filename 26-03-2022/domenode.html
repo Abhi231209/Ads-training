@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>document</title>
+    </head>
+<body>
+
+<h1 id="id1">My First Page</h1>
+<p id="id2">node name</p>
+<p id="new"></p>
+<script>
+document.getElementById("id2").innerHTML = document.getElementById("id1").firstChild.nodeValue;
+document.getElementById("new").innerHTML =document.getElementById("id2").nodeName
+</script>
+
+</body>
+</html>
