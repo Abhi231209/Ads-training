@@ -1,0 +1,14 @@
+.div1{
+    border: 1px solid black;
+}
+table ,thead ,tbody,tr,td,th{
+    border: 1px solid black;
+} 
+.cont{
+    border:  2px solid black;
+    box-shadow: 2px 3px black;
+    width: fit-content;
+}
+.nojsx{
+    color: blue;
+}
