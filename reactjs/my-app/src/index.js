@@ -1,21 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-// import App from './App';
 import reportWebVitals from './reportWebVitals';
-// import Complexjsx from "./28-03-2022/Complexjsx"
-// import Using_expression from './28-03-2022/Using_expression'
-// import Forpropsparent from './28-03-2022/Forpropsparent'
-// import Withoutjsx from "./28-03-2022/Withoutjsx"
-// import Events from "./28-03-2022/Events"
+import App from './App'
+// import Renderinglist from "./29-03-2022/Renderinglist"
+// import Conditionalcontent from './29-03-2022/Conditionalcontent'
+// import Multiplestateinone from "./29-03-2022/Multiplestateinone"
+// import Child2parentparent from "./29-03-2022/Child2parentparent"
 
-import ForState2 from "./28-03-2022/ForState2"
-
+import Dynamicstylingjs from "./29-03-2022/Dynamicstylingjs"
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <ForState2 />
+    <Dynamicstylingjs/>
   </React.StrictMode>,
   document.getElementById('root')
 );

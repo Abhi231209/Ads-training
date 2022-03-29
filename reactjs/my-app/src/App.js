@@ -1,11 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
-import New from './28-03-2022/New'
+// import New from './28-03-2022/New'
+// import Child2parentparent from "./29-03-2022/Child2parentparent"
+import Renderinglist from "./29-03-2022/Renderinglist"
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -19,7 +22,8 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
+      <Renderinglist />
     </div>
   );
 }
