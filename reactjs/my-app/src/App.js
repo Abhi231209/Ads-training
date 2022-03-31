@@ -3,6 +3,8 @@ import './App.css';
 // import New from './28-03-2022/New'
 // import Child2parentparent from "./29-03-2022/Child2parentparent"
 import Renderinglist from "./29-03-2022/Renderinglist"
+import Cssmodulesjs from './30-03-2022/Cssmodulesjs';
+
 
 
 function App() {
@@ -24,6 +26,7 @@ function App() {
         </a>
       </header> */}
       <Renderinglist />
+      <Cssmodulesjs/>
     </div>
   );
 }

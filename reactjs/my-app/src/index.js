@@ -3,17 +3,23 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import App from './App'
+import ForFragment from './30-03-2022/Fragment'
+import Cssmodulesjs from './30-03-2022/Cssmodulesjs';
 // import Renderinglist from "./29-03-2022/Renderinglist"
 // import Conditionalcontent from './29-03-2022/Conditionalcontent'
 // import Multiplestateinone from "./29-03-2022/Multiplestateinone"
 // import Child2parentparent from "./29-03-2022/Child2parentparent"
 
-import Dynamicstylingjs from "./29-03-2022/Dynamicstylingjs"
+// import Dynamicstylingjs from "./29-03-2022/Dynamicstylingjs"
+// import Portals from './31-03-2022/Portals'
+// import Refs from './31-03-2022/Refs'
+import Foruseeffect from './31-03-2022/Foruseeffect'
+
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <Dynamicstylingjs/>
+    <Foruseeffect/>
   </React.StrictMode>,
   document.getElementById('root')
 );
