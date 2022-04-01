@@ -13,13 +13,16 @@ import Cssmodulesjs from './30-03-2022/Cssmodulesjs';
 // import Dynamicstylingjs from "./29-03-2022/Dynamicstylingjs"
 // import Portals from './31-03-2022/Portals'
 // import Refs from './31-03-2022/Refs'
-import Foruseeffect from './31-03-2022/Foruseeffect'
+// import Foruseeffect from './31-03-2022/Foruseeffect'
+
+import Context from './1-04-2022/Context'
+import Reducer from './1-04-2022/Reducer'
 
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <Foruseeffect/>
+    <Context />
   </React.StrictMode>,
   document.getElementById('root')
 );
