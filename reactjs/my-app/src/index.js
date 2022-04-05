@@ -17,12 +17,13 @@ import Cssmodulesjs from './30-03-2022/Cssmodulesjs';
 
 import Context from './1-04-2022/Context'
 import Reducer from './1-04-2022/Reducer'
+import WIthoutmemo from './5-04-2022/WIthoutmemo'
 
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <Context />
+    <WIthoutmemo />
   </React.StrictMode>,
   document.getElementById('root')
 );
