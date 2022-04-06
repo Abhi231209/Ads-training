@@ -1,19 +1,21 @@
-import React ,{useRef,useState} from 'react'
+import React ,{useRef} from 'react'
 
 export default function Refs() {
-    // const [state1,useState1]=useState('')
-    const Newref=useRef()
-    console.log(Newref)
+    const Newref=useRef(null)
+  
     let handelsubmit=(event)=>{
         event.preventDefault();
         Newref.current.focus()
+        console.log(Newref.current.value)
     }
     
   return (
     <div>
         <form>
             <label>Enter Name</label>
-            <input type="text" ref={Newref} ></input>
+            <input type="text"></input><br />
+            <label>Enter Age</label>
+            <input type="text" ref={Newref} ></input><br />
             <input type="submit" onClick={handelsubmit}/>
         </form>
     </div>

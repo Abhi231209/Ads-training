@@ -12,18 +12,20 @@ import Cssmodulesjs from './30-03-2022/Cssmodulesjs';
 
 // import Dynamicstylingjs from "./29-03-2022/Dynamicstylingjs"
 // import Portals from './31-03-2022/Portals'
-// import Refs from './31-03-2022/Refs'
+import Refs from './31-03-2022/Refs'
 // import Foruseeffect from './31-03-2022/Foruseeffect'
 
-import Context from './1-04-2022/Context'
-import Reducer from './1-04-2022/Reducer'
-import WIthoutmemo from './5-04-2022/WIthoutmemo'
-
+// import Context from './1-04-2022/Context'
+// import Reducer from './1-04-2022/Reducer'
+// import WIthoutmemo from './2-04-2022/WIthoutmemo'
+import Forcallback from './06-04-2022/Forcallback'
+import Assignment1 from './06-04-2022/Assignment1'
+import Usingrefassignment1 from './06-04-2022/Usingrefassignment1'
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <WIthoutmemo />
+    <Usingrefassignment1 />
   </React.StrictMode>,
   document.getElementById('root')
 );
