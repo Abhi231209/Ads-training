@@ -20,12 +20,15 @@ import Refs from './31-03-2022/Refs'
 // import WIthoutmemo from './2-04-2022/WIthoutmemo'
 import Forcallback from './06-04-2022/Forcallback'
 import Assignment1 from './06-04-2022/Assignment1'
-import Usingrefassignment1 from './06-04-2022/Usingrefassignment1'
+// import Usingrefassignment1 from './06-04-2022/Usingrefassignment1'
+import Forinputbox from './Project1/Forinputbox'
+import Forpropscc from './07-04-2022/Forpropscc'
+import Forstate from './07-04-2022/Forstate'
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <Usingrefassignment1 />
+    <Forinputbox />
   </React.StrictMode>,
   document.getElementById('root')
 );

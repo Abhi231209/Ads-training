@@ -5,6 +5,4 @@ person.printname=function (){
     return this.firstname + this.lastname
 } 
 
-
-
 console.log(person.printname())

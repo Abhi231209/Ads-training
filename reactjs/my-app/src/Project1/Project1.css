@@ -1,0 +1,25 @@
+.maindiv{
+    margin-left: 20%;
+    margin-top: 3%;
+}
+.Forinput{
+    box-shadow: 2px 3px 5px black;
+    width: fit-content;
+    padding: 40px;
+}
+.Forinput input{
+    width: 500px;
+}
+.Clickmebutton{
+    background-color: brown;
+    color: white;
+}
+.ptag{
+    width: fit-content;
+    background-color: brown;
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-shadow: 2px 2px 0px brown;
+    cursor: pointer;
+}
