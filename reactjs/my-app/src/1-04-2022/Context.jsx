@@ -5,7 +5,7 @@ export const Newcont=React.createContext()
 function Context() {
   
     return (
-      <Newcont.Provider value="Reed">
+      <Newcont.Provider value="abhishek">
       <Context2/>
     </Newcont.Provider>
     );

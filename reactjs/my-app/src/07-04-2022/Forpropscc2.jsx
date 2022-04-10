@@ -4,7 +4,7 @@ export default class Forpropscc2 extends Component {
   render() {
       var data=this.props.data
     return (
-      <li>{data}</li>
+      <li>{data.btech}</li>
     )
   }
 }

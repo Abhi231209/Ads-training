@@ -5,7 +5,7 @@ function Context2() {
   // const user = useContext(Newcont);
   return (
     <Newcont.Consumer>
-      {value => <h1>{value}</h1>} 
+      {(val) => <h1>{val}</h1>} 
     </Newcont.Consumer>
   );
 }

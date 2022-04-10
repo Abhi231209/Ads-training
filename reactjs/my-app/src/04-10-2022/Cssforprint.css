@@ -1,0 +1,18 @@
+.ptag{
+    width: fit-content;
+    background-color: brown;
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-shadow: 2px 2px 0px brown;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 20%;
+    width: 50%;
+    border-radius: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.mainsection{
+    text-align: center;
+}
