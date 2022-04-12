@@ -26,12 +26,15 @@ import reportWebVitals from './reportWebVitals';
 // import Forstate from './07-04-2022/Forstate'
 // import ForComponentwillmount from './04-08-2022/ForComponentwillmount'
 // import Maincomponent from './04-10-2022/Maincomponent'
-import Usingasyncawait from './04-10-2022/Usingasyncawait'
+// import Usingasyncawait from './04-10-2022/Usingasyncawait'
+// import Tohandelerror from './04-11-2022/Tohandelerror';
+import Mainfile from './FoodOrderingProject/Mainfile'
+
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <Usingasyncawait />
+    <Mainfile />
   </React.StrictMode>,
   document.getElementById('root')
 );
