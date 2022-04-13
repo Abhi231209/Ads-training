@@ -1,24 +1,30 @@
-import React, { useState } from 'react'
-import Header from './Components/Layout/Header'
-import Meals from './Components/Meals/Meals'
-import Cart from './Components/Cart/Cart'
-import Cartprovider from './store/Cartprovider';
+import { useState } from 'react';
 
-export default function Mainfile() {
-  const [showCart,setShowCart]=useState(false)
-  const ShowCartHandeler=()=>{
-    setShowCart(true)
-  }
-  const HideCartHandeler=()=>{
-    setShowCart(false)
-  }
+import Header from './Components/Layout/Header';
+import Meals from './Components/Meals/Meals';
+import Cart from './Components/Cart/Cart';
+import CartProvider from './store/Cartprovider';
+
+function Mainfile() {
+  const [cartIsShown, setCartIsShown] = useState(false);
+
+  const showCartHandler = () => {
+    setCartIsShown(true);
+  };
+
+  const hideCartHandler = () => {
+    setCartIsShown(false);
+  };
+
   return (
-    <Cartprovider>
-      {showCart && <Cart  onclose={HideCartHandeler}/>} 
-        <Header  onShowCart={ShowCartHandeler}/>
-        <main>
-          <Meals/>
-        </main>
-    </Cartprovider>
-  )
+    <CartProvider>
+      {cartIsShown && <Cart onClose={hideCartHandler} />}
+      <Header onShowCart={showCartHandler} />
+      <main>
+        <Meals />
+      </main>
+    </CartProvider>
+  );
 }
+
+export default Mainfile;
