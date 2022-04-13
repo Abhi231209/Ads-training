@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Header from './Components/Layout/Header'
 import Meals from './Components/Meals/Meals'
 import Cart from './Components/Cart/Cart'
+import Cartprovider from './store/Cartprovider';
 
 export default function Mainfile() {
   const [showCart,setShowCart]=useState(false)
@@ -12,12 +13,12 @@ export default function Mainfile() {
     setShowCart(false)
   }
   return (
-    <div>
+    <Cartprovider>
       {showCart && <Cart  onclose={HideCartHandeler}/>} 
         <Header  onShowCart={ShowCartHandeler}/>
         <main>
           <Meals/>
         </main>
-    </div>
+    </Cartprovider>
   )
 }
