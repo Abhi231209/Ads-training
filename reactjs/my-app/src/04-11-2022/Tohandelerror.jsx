@@ -40,9 +40,6 @@ export default function Tohandelerror() {
         {!Isloading && <ForPrintlist data={Fordata} />}
         {!Isloading && Erro &&<h1>{Erro}</h1>}
         {Isloading && Fordata.length==0 && !Erro && <h1>found no movies</h1>}
-
-
-
       </section>
     </div>
   );
