@@ -3,41 +3,23 @@ import React, { useEffect, useState } from 'react';
 import Tasks from './components/Tasks/Tasks';
 import NewTask from './components/NewTask/NewTask';
 import './MainFileForCustomHook.css'
+import useRequest from './use-Request';
 
 function MainFileForCustomHook() {
-  const [isLoading, setIsLoading] = useState(false);
-  const [error, setError] = useState(null);
+
   const [tasks, setTasks] = useState([]);
-
-  const fetchTasks = async (taskText) => {
-    setIsLoading(true);
-    setError(null);
-    try {
-      const response = await fetch(
-        'https://movies-list-4cd19-default-rtdb.firebaseio.com/task.json'
-      );
-
-      if (!response.ok) {
-        throw new Error('Request failed!');
-      }
-
-      const data = await response.json();
-
-      const loadedTasks = [];
-
+  
+  const fordata=(data)=>{
+    const loadedTasks = [];
       for (const taskKey in data) {
         loadedTasks.push({ id: taskKey, text: data[taskKey].text });
       }
-
       setTasks(loadedTasks);
-    } catch (err) {
-      setError(err.message || 'Something went wrong!');
-    }
-    setIsLoading(false);
-  };
+  }
+  const afteusehook=useRequest({url :'https://movies-list-4cd19-default-rtdb.firebaseio.com/task.json'},fordata)
 
   useEffect(() => {
-    fetchTasks();
+    afteusehook.fetchTasks();
   }, []);
 
   const taskAddHandler = (task) => {
@@ -49,9 +31,9 @@ function MainFileForCustomHook() {
       <NewTask onAddTask={taskAddHandler} />
       <Tasks
         items={tasks}
-        loading={isLoading}
-        error={error}
-        onFetch={fetchTasks}
+        loading={afteusehook.isLoading}
+        error={afteusehook.error}
+        onFetch={afteusehook.fetchTasks}
       />
     </React.Fragment>
   );
