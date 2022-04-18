@@ -14,15 +14,14 @@ const useCount=(forward=true)=>{
                 return prevstate-1;
             })
         }
-
     },1000)
    return ()=> clearInterval(number)
    },[forward])
+
    return (
        <>
-       <h1>{counter}</h1>
+         <h1>{counter}</h1>
        </>
        )
 }
-
 export default useCount

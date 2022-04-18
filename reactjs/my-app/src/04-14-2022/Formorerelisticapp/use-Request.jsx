@@ -1,10 +1,10 @@
-import {useState} from 'react'
+import {useState,useCallback} from 'react'
 
- const useRequest=(request,applydata)=> {
+ const useRequest=()=> {
     const [isLoading, setIsLoading] = useState(false);
     const [error, setError] = useState(null);
-
-    const fetchTasks = async (taskText) => {
+    
+    const fetchTasks = useCallback ( async (request,applydata) => {
       setIsLoading(true);
       setError(null);
       try {
@@ -24,8 +24,7 @@ import {useState} from 'react'
         setError(err.message || 'Something went wrong!');
       }
       setIsLoading(false);
-    };
-  
+    },[]);
   return {
     isLoading:isLoading,
     error:error,
