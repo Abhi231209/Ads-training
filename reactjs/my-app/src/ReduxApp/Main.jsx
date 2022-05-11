@@ -1,10 +1,14 @@
 import React from 'react'
 import Counter from './components/Counter'
+import Auth from './components/Auth'
+import Header from './components/Header'
 
 export default function Main() {
   return (
     <div>
-        <Counter/>
+      <Header />
+      <Auth />
+      <Counter />
     </div>
   )
 }
