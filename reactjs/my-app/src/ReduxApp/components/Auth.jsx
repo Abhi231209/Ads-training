@@ -1,10 +1,18 @@
 import classes from './Auth.module.css';
+import { useDispatch } from 'react-redux';
+import {authactions} from '../store/Auth'
 
 const Auth = () => {
+  const dispatch=useDispatch()
+  const handelauth=(event)=>{
+    event.preventDefault()
+   dispatch(authactions.login())
+   console.log('buttoncalled')
+  }
   return (
     <main className={classes.auth}>
       <section>
-        <form>
+        <form onSubmit={handelauth}>
           <div className={classes.control}>
             <label htmlFor='email'>Email</label>
             <input type='email' id='email' />
@@ -13,7 +21,7 @@ const Auth = () => {
             <label htmlFor='password'>Password</label>
             <input type='password' id='password' />
           </div>
-          <button>Login</button>
+          <button >Login</button>
         </form>
       </section>
     </main>
