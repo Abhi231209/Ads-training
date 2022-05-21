@@ -5,7 +5,7 @@ import Meals from './Components/Meals/Meals';
 import Cart from './Components/Cart/Cart';
 import CartProvider from './store/Cartprovider';
 
-function Mainfile() {
+function Mainfile(props) {
   const [cartIsShown, setCartIsShown] = useState(false);
 
   const showCartHandler = () => {
