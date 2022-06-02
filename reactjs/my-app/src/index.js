@@ -36,19 +36,21 @@ import reportWebVitals from './reportWebVitals';
 // import ForForms from './04-18-2022/ForForms'
 // import ForOnblur from './04-18-2022/ForOnblur'
 // import ToDisable from './04-18-2022/ToDisable'
-// import ToPrint from './04-18-2022/ToPrint'
+import ToPrint from './04-18-2022/ToPrint'
 // import Forredux from './01-05-2022/store/Forredux'
 // import Main from './ReduxApp/Main'
 import {Provider} from 'react-redux'
 // import store from './ReduxApp/store/Forredux'
 import MainApp from './AdvanceReduxProject/MainApp'
 import store from './AdvanceReduxProject/store/redux-store'
+// import SimpleInput from './04-18-2022/usingcustomhook/Form'
 
 
 ReactDOM.render(
-  <Provider store={store}>
-     <MainApp />
-  </Provider>
+  // <Provider store={store}>
+  //    <MainApp />
+  // </Provider>
+  <ToPrint/>
     ,
   document.getElementById('root')
 );
