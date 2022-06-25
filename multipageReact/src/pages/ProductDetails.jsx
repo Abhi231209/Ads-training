@@ -9,7 +9,6 @@ export default function ProductDetails() {
             Product details
         </h1>
         <h3>{prams.productId}</h3>
-
       </section>
   )
 }
