@@ -4,6 +4,7 @@ import AllQuotes from './pages2/AllQuotes'
 import NewQuotes from './pages2/NewQuotes'
 import QuotesDetails from './pages2/QuotesDetails'
 import Layout from "./components/layout/Layout"
+import NotFound from './pages2/NotFound'
 
 export default function NewApp() {
   return (
@@ -20,6 +21,9 @@ export default function NewApp() {
                 </Route>
                 <Route path="/new-quote">
                     <NewQuotes/>
+                </Route>
+                <Route path={'*'}>
+                    <NotFound/>
                 </Route>
             </Switch>
     </Layout>
